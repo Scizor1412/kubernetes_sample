@@ -1,0 +1,10 @@
+1. install netcat
+2. control plane:
+    1. ss -na | grep :6443
+    2. ss -na | grep :2379-2380
+    3. ss -na | grep :10250
+    4. ss -na | grep :10259
+    5. ss -na | grep :10257
+3. worker nodes:
+    1. ss -na | grep :10256
+    2. ss -na | grep :30000-32767
